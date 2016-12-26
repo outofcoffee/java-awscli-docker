@@ -1,0 +1,11 @@
+language: java
+sudo: required
+
+services:
+  - docker
+
+script:
+  - docker build --tag outofcoffee/java-awscli .
+
+after_success:
+  - bash ./tag-push.sh
