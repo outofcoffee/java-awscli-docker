@@ -2,7 +2,7 @@ FROM openjdk:8u171-jdk
 
 MAINTAINER Pete Cornish <outofcoffee@gmail.com>
 
-RUN apt-get update && apt-get install -y php5-mcrypt python-pip
+RUN apt-get update && apt-get install -y python-pip
 
 RUN pip install awscli --ignore-installed six
 
